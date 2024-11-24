@@ -71,12 +71,7 @@ INSERT INTO Market (Brand_ID, Market_Trend, Certifications) VALUES ('BRAND-0003'
  
 
   
-SELECT b.Brand_Name, AVG(p.Average_Price_USD) AS Average_Price
-FROM Brand b
-JOIN Product p ON b.Brand_ID = p.Brand_ID
-GROUP BY b.Brand_Name
-ORDER BY Average_Price DESC
-LIMIT 5;
+
 
 
 
